@@ -13,21 +13,6 @@ var store  = fortune({
     serializers: [{ type: jsonapi }]    
 }); 
 
-//models:
-//todo
-/*
-store.defineType('todo', {
-    where: {type: String},
-    what: {type: String},
-    user: { 
-        link: 'user',
-        inverse: 'todos',
-        isArray: false
-    }
-});
-
-*/
-
 store.defineType('todo', {
     tipus: {type: String},
     leiras: {type: String},
@@ -37,21 +22,6 @@ store.defineType('todo', {
         isArray: false
     }
 });
-
-
-//user
-/*
-store.defineType('user', {
-    surname: {type: String},
-    forename: {type: String},
-    username: {type: String},
-    todos: { 
-        link: 'todo',
-        inverse: 'user',
-        isArray: true
-    }
-});
-*/
 
 store.defineType('tantargy', {
     tipus: {type: String},
